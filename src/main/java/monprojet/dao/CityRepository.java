@@ -12,5 +12,4 @@ public interface CityRepository extends JpaRepository<City, Integer> {
      * @return La ville correspondant au nom fourni, ou null si pas trouvé.
      */
     public City findByName(String cityName);
-
 }

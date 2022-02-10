@@ -48,5 +48,4 @@ public interface CountryRepository extends JpaRepository<Country, Integer> {
     @Query(value = "SELECT Country.name AS countryName, SUM(population) AS populationTotale FROM Country INNER JOIN City ON country_id = Country.id GROUP BY countryName", 
     nativeQuery = true)
     List<PopulationResult> populationParPaysSQL();
-
 }
